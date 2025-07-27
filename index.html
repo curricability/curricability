@@ -877,9 +877,9 @@
     if("undefined"!=typeof Tally){
       Tally.loadEmbeds()
     } else {
-      d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){
+      d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){
         e.src=e.dataset.tallySrc
-      }))
+      })
     }
   };
   if("undefined"!=typeof Tally)v();
